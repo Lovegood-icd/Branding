@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Aggravo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0E0E10;
+}
+
+#explode {
+  width: 80vw;
+  overflow: visible;
+  transform: translateX(6%);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  position: relative;
+  opacity: 0;
+}
+
+#free,
+#all {
+  font-family: 'Aggravo', sans-serif;
+  font-size: 15vw;
+  top: 25%;
+  color: #ffffff;
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  z-index: 10;
+
+}
+
+#free {
+  left: 18%;
+}
+
+#all {
+  right: 24%
+}
+
+.confetti {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50;
+  height: 30px;
+  width: 30px;
+  z-index: -1;
+}
+
+.confetti img {
+  width: 100%;
+  max-width: 30px;
+  position: absolute;
+  opacity: 0
+}
